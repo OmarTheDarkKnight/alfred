@@ -1,4 +1,4 @@
-package com.example.alfred;
+package com.gotham.alfred;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
