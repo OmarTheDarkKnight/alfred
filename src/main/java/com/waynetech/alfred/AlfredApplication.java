@@ -1,5 +1,7 @@
 package com.waynetech.alfred;
 
+import com.waynetech.alfred.order.Order;
+import com.waynetech.alfred.order.OrderService;
 import com.waynetech.alfred.user.UserService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -14,10 +16,12 @@ public class AlfredApplication {
     }
 
     @Bean
-    CommandLineRunner cmdRunner(UserService userService) {
+    CommandLineRunner cmdRunner(UserService userService, OrderService orderService) {
         return args -> {
             System.out.println(userService.findall().getFirst());
-//            System.out.println("Hello");
+
+            for(Order order: orderService.findAll())
+                System.out.println(order);
         };
     }
 
