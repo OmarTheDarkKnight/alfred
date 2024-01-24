@@ -50,6 +50,7 @@
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <!--Database and Spring JPA Dependencies end-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
