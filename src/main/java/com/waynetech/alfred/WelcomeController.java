@@ -1,4 +1,4 @@
-package com.waynetech.alfred.controller.web;
+package com.waynetech.alfred;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
